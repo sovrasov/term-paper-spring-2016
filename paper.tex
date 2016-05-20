@@ -64,9 +64,9 @@
 
 \usepackage[maxnames=4,
 				movenames=false,
-				backend=biber,
+				backend=bibtex,
 				%style=gost-numeric,
-        %sorting=nty,
+        sorting=none,
 				autolang=other]{biblatex}
 \addbibresource{bibliography.bib}
 
@@ -152,7 +152,11 @@
 \tableofcontents
 
 \newpage
-\input{content} % Link to document content
+\input{introduction}
+\input{multilevel_evolvents}
+\input{multievolvents}
+\input{local_search}
+\input{mixed_ags_implementation}
 
 \newpage
 \nocite{*}
