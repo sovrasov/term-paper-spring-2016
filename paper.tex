@@ -64,9 +64,9 @@
 
 \usepackage[maxnames=5,
 				movenames=false,
-				%backend=bibtex,
-        backend=biber,
-				style=gost-numeric,
+				backend=bibtex,
+        %backend=biber,
+				%style=gost-numeric,
         sorting=none,
 				autolang=other]{biblatex}
 \addbibresource{bibliography.bib}
@@ -118,7 +118,7 @@
   frame=l,
   keepspaces=true,
   keywordstyle=\color{codeblue},
-  language=Python,
+  language=C++,
   numbers=left,
   numbersep=8pt,
   numberstyle=\tiny\color{codegray},
@@ -169,6 +169,8 @@
 %\nocite{*}
 \addcontentsline{toc}{section}{Список литературы}
 \printbibliography
+\newpage
+\input{attachments}
 
 \endgroup
 
