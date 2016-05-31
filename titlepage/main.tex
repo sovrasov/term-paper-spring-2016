@@ -1,0 +1,64 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{fontspec}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% page layout
+\usepackage[a4paper,margin=1in,heightrounded]{geometry}
+\geometry{left=2.5cm}
+\geometry{right=1.5cm}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+
+\usepackage{indentfirst}
+\usepackage{placeins}
+
+% fonts
+\setmainfont{Times New Roman}
+\setsansfont{CMU Sans Serif}
+\setboldmathrm{CMU Serif}
+\setmathrm{CMU Serif}
+
+\usepackage{color}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{14}{15}\bfseries}{\thesection}{5pt}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{15}\bfseries}{\thesubsection}{5pt}{}
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{14}{15}\bfseries}{\thesubsubsection}{5pt}{}
+
+% commands definintions
+% vector field
+\newcommand{\vf}[1]{\mathbf{#1}}
+% at
+\newcommand{\at}[2]{\left.#1\right|_{#2}}
+% half
+\newcommand{\half}[0]{\frac12}
+% draft
+\newcommand{\dr}[1]{\textcolor{red}{#1}}
+
+% sections style redefinition
+\renewcommand{\thesection}
+  {\thepart\arabic{section}.}
+\renewcommand{\thesubsection}
+  {\thepart\arabic{section}.\arabic{subsection}.}
+\renewcommand{\thesubsubsection}
+  {\thepart\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
+
+% equations and fugures numbering style redefinition
+\renewcommand{\theequation}
+  {\thesection\arabic{equation}}
+\renewcommand{\thefigure}
+  {\thesection\arabic{figure}}
+
+% document
+\begin{document}
+\begingroup
+\fontsize{14pt}{17pt}\selectfont
+\input{title}
+\endgroup
+
+\end{document}
